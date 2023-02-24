@@ -244,9 +244,14 @@ img {
 
 .compare-account-table-wrapper {
     overflow: hidden;
-    display: grid;
-    grid-template-columns: 194px 930px;
+    // display: grid;
+    // grid-template-columns: 194px 930px;
     border: 1px solid var(--dark-300);
+}
+
+.col-margin {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .compare-account-table__nav-tabs {
@@ -292,11 +297,15 @@ img {
     border-bottom: unset;
 }
 
+ 
+
 .compare-account-table-menu__header .compare-account-table-menu__title {
-    font-size: 14px;
+    font-size: 13px;
     text-transform: capitalize;
     
 }
+.compare-account-table-menu__title-menu {font-size: 14px;}
+
 .compare-account-table-menu__item {
     padding: 20px;
     border-bottom: 1px solid var(--dark-200);
@@ -361,12 +370,13 @@ img {
 }
 
 .slider-arrow-left {
-    left: -20px;
+    // left: -20px;
     background-image: url("../icons/arrow-left.svg");
 }
 
 .slider-arrow-right {
-    right: -43rem;
+    // right: -43rem;
+    right: 0;
     background-image: url("../icons/arrow-left.svg");
     transform: rotate(180deg);
 }
@@ -495,7 +505,13 @@ img {
     }
 
     .compare-account-table-menu__item:nth-child(16) .compare-account-table-menu__title,
-    .compare-account-table-menu__item:nth-child(4) .compare-account-table-menu__title {height:  33px;}
+    .compare-account-table-menu__item:nth-child(4) .compare-account-table-menu__title {height:  80px;}
+
+    .compare-account-table-menu__item  {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 @media (max-width: 375.98px) {
