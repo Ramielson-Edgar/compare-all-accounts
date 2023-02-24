@@ -322,7 +322,7 @@ img {
     height: 133px;
 }
  
-.compare-account-table-menu__item {
+.compare-account-table-menu__item-left {
     align-items: flex-start;
 }
 
@@ -516,15 +516,7 @@ img {
     .compare-account-table__nav-link.active, .compare-account-table__nav-link {
         width: 174px;
     }
-
-    .compare-account-table-menu__item:nth-child(16) .compare-account-table-menu__title,
-    .compare-account-table-menu__item:nth-child(4) .compare-account-table-menu__title {height:  80px;}
-
-    .compare-account-table-menu__item  {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
+ 
 }
 
 @media (max-width: 375.98px) {
